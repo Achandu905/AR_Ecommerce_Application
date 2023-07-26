@@ -78,11 +78,11 @@ const HomePage = () => {
 
   // filter by cat
   const handleFilter = (value, id) => {
-    const all = [...checked];
+    let all = [...checked];
     if (value) {
       all.push(id);
     } else {
-      all.filter((c) => c !== id);
+      all = all.filter((c) => c !== id);
     }
     setChecked(all);
   };
@@ -107,17 +107,12 @@ const HomePage = () => {
     }
   };
   return (
-    <Layout title={"All Products - Best offers "}>
+    <Layout title={"ALl Products - Best offers "}>
+      {/* banner image */}
+
+      {/* banner image */}
       <div className="container-fluid row mt-3 home-page">
-        <div
-          className="col-md-3 filters"
-          style={{
-            position: "fixed",
-            top: "0",
-            height: "90%",
-            width: "20%",
-          }}
-        >
+        <div className="col-md-3 filters" id="filter">
           <h4 className="text-center">Filter By Category</h4>
           <div className="d-flex flex-column">
             {categories?.map((c) => (
@@ -149,11 +144,11 @@ const HomePage = () => {
             </button>
           </div>
         </div>
-        <div className="col-md-9 " style={{ marginLeft: "20%" }}>
+        <div className="col-md-9 ">
           <h1 className="text-center">All Products</h1>
-          <div className="d-flex flex-wrap">
+          <div className="d-flex flex-wrap product-container">
             {products?.map((p) => (
-              <div className="card m-2" key={p._id}>
+              <div className="card m-2 item" key={p._id}>
                 <img
                   src={`/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
@@ -165,7 +160,7 @@ const HomePage = () => {
                     <h5 className="card-title card-price">
                       {p.price.toLocaleString("en-US", {
                         style: "currency",
-                        currency: "USD",
+                        currency: "INR",
                       })}
                     </h5>
                   </div>
@@ -174,7 +169,7 @@ const HomePage = () => {
                   </p>
                   <div className="card-name-price">
                     <button
-                      className="btn btn-dark ms-1"
+                      className="btn btn-info ms-1"
                       onClick={() => navigate(`/product/${p.slug}`)}
                     >
                       More Details

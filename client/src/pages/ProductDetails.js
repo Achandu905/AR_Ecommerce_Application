@@ -7,6 +7,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProductDetailsStyles.css";
 
 const ProductDetails = () => {
+  const [quantity, setQuantity] = useState(1);
   const [cart, setCart] = useCart();
   const params = useParams();
   const navigate = useNavigate();
@@ -61,10 +62,20 @@ const ProductDetails = () => {
             Price :
             {product?.price?.toLocaleString("en-US", {
               style: "currency",
-              currency: "USD",
+              currency: "INR",
             })}
           </h6>
           <h6>Category : {product?.category?.name}</h6>
+          <div style={{ marginBottom: 5 }}>
+            quantity:
+            <input
+              type="number"
+              value={quantity}
+              placeholder="Enter quantity"
+              className="form-control"
+              onChange={(e) => setQuantity(e.target.value)}
+            />
+          </div>
           <button
             class="btn btn-dark ms-1"
             onClick={() => {
@@ -97,7 +108,7 @@ const ProductDetails = () => {
                   <h5 className="card-title card-price">
                     {p.price.toLocaleString("en-US", {
                       style: "currency",
-                      currency: "USD",
+                      currency: "INR",
                     })}
                   </h5>
                 </div>

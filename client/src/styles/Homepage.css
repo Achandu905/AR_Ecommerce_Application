@@ -1,5 +1,6 @@
 .banner-img {
-  margin-top: 60px;
+  width: 100vw;
+  height: 200px;
 }
 
 .home-page h1 {
@@ -78,4 +79,10 @@ filters
   color: green;
   font-weight: bold;
   font-size: 20px !important;
+}
+
+.product-container {
+  display: flex;
+  margin-left: 50px;
+  justify-content: space-evenly;
 }
