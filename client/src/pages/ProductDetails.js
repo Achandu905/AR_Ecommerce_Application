@@ -50,7 +50,7 @@ const ProductDetails = () => {
             className="card-img-top"
             alt={product.name}
             height="300"
-            width={"350px"}
+            width="350px"
           />
         </div>
         <div className="col-md-6 product-details-info">
