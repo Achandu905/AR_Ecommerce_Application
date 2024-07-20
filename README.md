@@ -1,13 +1,14 @@
-<<<<<<< HEAD
+
 # Ecommerce_Application
 =======
 # Ecommerce-application
  
 
 # Home Page
-![sodapdf-converted](https://github.com/Achandu905/Ecommerce_Application/assets/105991587/254edc47-24a8-4132-a2d1-3c21e14c95af)
+[sodapdf-converted](https://github.com/Achandu905/Ecommerce_Application/assets/105991587/254edc47-24a8-4132-a2d1-3c21e14c95af)
 
 # Cart
+
 
 <img width="960" alt="cart" src="https://github.com/Achandu905/Ecommerce_Application/assets/105991587/f170e53b-60d5-466b-8450-d66f55c8e85f">
 
