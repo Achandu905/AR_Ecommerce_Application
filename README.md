@@ -3,7 +3,10 @@
 
 # Home Page
 
-<img src="https://github.com/user-attachments/assets/bce67ab2-a2c8-427f-88a4-48b3c345b06f" width="700" height="300">
+<img src="https://github.com/user-attachments/assets/eb1bd8fc-1f38-4b61-827e-b686a20687de" width="700" height="300">
+
+
+
 
 # Cart
 
