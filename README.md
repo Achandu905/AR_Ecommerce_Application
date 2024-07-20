@@ -4,8 +4,11 @@
 # Ecommerce-application
  
 
+
 # Home Page
-[sodapdf-converted](https://github.com/Achandu905/Ecommerce_Application/assets/105991587/254edc47-24a8-4132-a2d1-3c21e14c95af)
+
+![home_page](https://github.com/user-attachments/assets/274f4f26-0c1d-4049-8d04-612b532c635a)
+
 
 # Cart
 
